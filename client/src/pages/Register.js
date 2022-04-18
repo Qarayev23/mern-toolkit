@@ -42,10 +42,12 @@ const Register = () => {
       dispatch(register({ formValue, navigate, toast }));
     }
   };
+
   const onInputChange = (e) => {
     let { name, value } = e.target;
     setFormValue({ ...formValue, [name]: value });
   };
+  
   return (
     <div
       style={{

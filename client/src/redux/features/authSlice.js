@@ -22,6 +22,7 @@ export const register = createAsyncThunk(
       const response = await api.signUp(formValue);
       toast.success("Register Successfully");
       navigate("/");
+      console.log(response.data);
       return response.data;
     } catch (err) {
       return rejectWithValue(err.response.data);

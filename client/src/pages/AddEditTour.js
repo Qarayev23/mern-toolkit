@@ -57,7 +57,7 @@ const AddEditTour = () => {
       } else {
         dispatch(updateTour({ id, updatedTourData, toast, navigate }));
       }
-      handleClear();
+      // handleClear();
     }
   };
   const onInputChange = (e) => {
